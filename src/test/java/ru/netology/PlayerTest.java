@@ -37,7 +37,6 @@ public class PlayerTest {
     public void reinstallingGameNotResetNull() {
         player.installGame(game1);
         player.play(game1, 3);
-        player.installGame(game1);
 
         int expected = 3;
         int actual = player.sumGenre(game1.getGenre());

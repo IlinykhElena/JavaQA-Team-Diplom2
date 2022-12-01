@@ -28,14 +28,14 @@ public class Player {
      * возвращает суммарное количество часов, проигранное в эту игру.
      * если игра не была установлена, то надо выкидывать RuntimeException
      */
-    public int play(Game game, int hours) {
+    public void play(Game game, int hours) {
         game.getStore().addPlayTime(name, hours);
         if (playedTime.containsKey(game)) {
             playedTime.put(game, playedTime.get(game) + hours);
         } else {
             throw new RuntimeException("Такая игра не установлена.");
         }
-        return playedTime.get(game);
+        playedTime.get(game);
     }
 
     /** Метод принимает жанр игры (одно из полей объекта игры) и
