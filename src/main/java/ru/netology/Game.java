@@ -13,11 +13,6 @@ public class Game {
         this.store = store;
     }
 
-    public String getTitle() {
-
-        return title;
-    }
-
     public String getGenre() {
 
         return genre;
