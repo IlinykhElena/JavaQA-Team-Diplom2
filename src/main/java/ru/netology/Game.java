@@ -13,15 +13,13 @@ public class Game {
         this.store = store;
     }
 
-    public String getTitle() {
-        return title;
-    }
-
     public String getGenre() {
+
         return genre;
     }
 
     public GameStore getStore() {
+
         return store;
     }
 
@@ -37,6 +35,7 @@ public class Game {
 
     @Override
     public int hashCode() {
+
         return Objects.hash(title, genre, store);
     }
 }
