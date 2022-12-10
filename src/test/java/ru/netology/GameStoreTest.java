@@ -32,7 +32,7 @@ public class GameStoreTest {
     }
 
     @Test
-    public void shouldContainGame() {
+    public void shouldContainsGame() {
         Game game = store.publishGame("Нетология Баттл Онлайн", "Аркады");
         assertFalse(store.containsGame(game));
     }
